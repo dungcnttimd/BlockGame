@@ -16,8 +16,12 @@ public class PlayerStatus : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
+    void Update(){
+        // Debug.Log((int)Time.time);
+        // if(((int)Time.time+1) % 5 == 0){
+        //     Debug.Log("-------------------------");
+        //     Debug.Log(((int)Time.time+1));
+        //     b_Reset = true;
+        // }
     }
 }
