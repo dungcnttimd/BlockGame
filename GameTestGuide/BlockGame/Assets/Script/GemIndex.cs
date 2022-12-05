@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GemIndex : MonoBehaviour
 {
-    // [SerializeField] private PlayerStatus PlayerState;
+    [SerializeField] private PlayerStatus PlayerState;
     // [SerializeField] private List<GameObject> Gem;
 
     public int i_GemIndex = -1;
@@ -41,9 +41,17 @@ public class GemIndex : MonoBehaviour
     public int getValue(){
         return i_GemValue;
     }
+    public void setID(int id){
+        i_index = id;
+    }
     public void OnSelectClick(){
-        Debug.Log(message: i_GemIndex);
-        Debug.Log(message: i_GemValue);
-        Debug.Log(message: i_index);
+        // Debug.Log(message: i_GemIndex);
+        // Debug.Log(message: i_GemValue);
+        // Debug.Log(message: i_index);
+
+        for(int i = 0; i < PlayerState.i_SizeTotal; i += 1){
+            PlayerState.Set_ID_All(i_GemIndex);
+        }
+        PlayerState.b_GemSelected = true;
     } 
 }

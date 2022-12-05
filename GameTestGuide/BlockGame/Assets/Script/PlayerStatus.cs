@@ -11,7 +11,7 @@ public class PlayerStatus : MonoBehaviour
     
     [SerializeField] private int i_SizeH = 8;
     [SerializeField] private int i_SizeW = 8;
-    private int i_SizeTotal = 0;
+    public int i_SizeTotal = 0;
 
     public int iIndexSelected = -1;
     public int iNumValue = 9;
@@ -43,6 +43,12 @@ public class PlayerStatus : MonoBehaviour
     void Start(){
         
     }
+
+    public void Set_ID_All(int id){
+        for(int i = 0; i < i_SizeTotal; i += 1){
+            gameobject_Gem[i].GetComponent<GemIndex>().i_index = id;
+        }
+    }
     // Update is called once per frame
     void Update(){
         if(b_GemSelected == true){
@@ -54,6 +60,14 @@ public class PlayerStatus : MonoBehaviour
             }
             iIndexSelected = val;
             b_GemSelected = false;
+            // Debug.Log(val);
+            Debug.Log((val%8 + 1) + " - " +  (val/8 + 1) + " is inde");
         }
+        // if((int)Time.time % 5 == 0){                                                                //done get selected index   
+        //     for(int i = 0; i < i_SizeTotal; i += 1){                                                //gameobject_Gem[i].GetComponent<GemIndex>().i_index
+        //         Debug.Log(gameobject_Gem[i].GetComponent<GemIndex>().i_index);      //b_GemSelected == true 
+        //     }                                                                                       // =>> selected <INDEX> 
+        // }
+        
     }
 }
