@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayPause : MonoBehaviour
+public class PlayPause : MonoBehaviour 
 {
+    [SerializeField] private PlayerStatus PlayerState;
     [SerializeField] private GameObject PlayButton;
     [SerializeField] private List<Sprite> PlayImage;
-    [SerializeField] private PlayerStatus PlayerState;
     [SerializeField] private GameObject DarkMaskPlay;
     // Start is called before the first frame update
     void Awake(){

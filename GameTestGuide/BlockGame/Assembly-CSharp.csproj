@@ -36,10 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\PlayPause.cs" />
-     <Compile Include="Assets\Script\PlayerStatus.cs" />
      <Compile Include="Assets\Script\MuteButton.cs" />
+     <Compile Include="Assets\Script\PlayPause.cs" />
      <Compile Include="Assets\Script\RestartButton.cs" />
+     <Compile Include="Assets\Script\PlayerStatus.cs" />
+     <Compile Include="Assets\Script\GemIndex.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

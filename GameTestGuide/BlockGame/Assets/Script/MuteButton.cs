@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class MuteButton : MonoBehaviour
 {
+    [SerializeField] private PlayerStatus PlayerState;
     [SerializeField] private GameObject bt_MuteButton;     //Global Object     //Global Object
     [SerializeField] private List<Sprite> MuteImage;
-    [SerializeField] private PlayerStatus PlayerState;
-
+    
     // Start is called before the first frame update
     void Awake(){
         Image m_Image = bt_MuteButton.GetComponent<Image>();
