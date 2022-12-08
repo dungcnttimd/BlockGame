@@ -15,6 +15,10 @@ public class PlayPause : MonoBehaviour
         Image m_Image = PlayButton.GetComponent<Image>();
         m_Image.sprite = PlayImage[0];
     }
+    void Update(){
+        // while(PlayerState.b_Play_Pause){
+        // }
+    }
     public void onClickPlayButton(){
         PlayerState.b_Play_Pause = !PlayerState.b_Play_Pause;
         Image m_Image = PlayButton.GetComponent<Image>();

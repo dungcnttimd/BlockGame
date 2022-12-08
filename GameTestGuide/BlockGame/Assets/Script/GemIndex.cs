@@ -12,18 +12,15 @@ public class GemIndex : MonoBehaviour
     public int i_index = -1;
 
     void Awake(){
-        i_GemIndex = -1;
-        i_GemValue = -1;
-        i_index = -1;
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
         int val = (int)Random.Range(minInclusive: 1f, 10f);
         if(val == 10){
             val -= 1;
         }
         i_GemValue = val;
+    }
+    // Start is called before the first frame update
+    void Start()
+    {
     }
     // Update is called once per frame
     void Update()

@@ -432,7 +432,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 141188980}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 141188982}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &141188980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,14 +458,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0f7b1c8a4660d4f4c9d9b2cfcae135f1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -483,6 +495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -618,7 +631,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &152405252
 RectTransform:
   m_ObjectHideFlags: 0
@@ -630,7 +643,15 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 726048408}
+  - {fileID: 228062472}
+  - {fileID: 741655586}
+  - {fileID: 1305343892}
+  - {fileID: 1440642352}
+  - {fileID: 355894935}
+  - {fileID: 248375978}
+  - {fileID: 622306181}
   m_Father: {fileID: 1787447703}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -820,7 +841,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 164834607}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 164834609}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &164834607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -834,14 +867,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1294c8b24507f8c4b990563e4da2fc7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -871,6 +904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -1075,7 +1109,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 178987168}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 178987170}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &178987168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1089,14 +1135,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0f7b1c8a4660d4f4c9d9b2cfcae135f1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1126,6 +1172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -1330,7 +1377,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 181679270}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 181679272}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &181679270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1344,7 +1403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1381,6 +1440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -1534,7 +1594,7 @@ RectTransform:
   m_Children:
   - {fileID: 774520311}
   m_Father: {fileID: 1787447703}
-  m_RootOrder: 17
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -1799,7 +1859,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 213492401}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 213492403}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &213492401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1813,14 +1885,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1294c8b24507f8c4b990563e4da2fc7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1850,6 +1922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -1957,7 +2030,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 218820330}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 218820332}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &218820330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1971,14 +2056,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0e15721bf59541c45af62f2ab2842b07, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2008,6 +2093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -2115,7 +2201,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 220427154}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 220427156}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &220427154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2129,14 +2227,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1294c8b24507f8c4b990563e4da2fc7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2166,6 +2264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -2216,15 +2315,15 @@ RectTransform:
   m_GameObject: {fileID: 228062471}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0}
+  m_LocalScale: {x: 0.8333333, y: 0.8333333, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1787447703}
-  m_RootOrder: 2
+  m_Father: {fileID: 152405252}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -220.50002, y: 396.90002}
+  m_AnchoredPosition: {x: -367.5, y: 661.5}
   m_SizeDelta: {x: 138, y: 138}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &228062473
@@ -2240,7 +2339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0.039215688}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2349,7 +2448,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 233569227}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 233569229}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &233569227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2363,7 +2474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2400,6 +2511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -2450,15 +2562,15 @@ RectTransform:
   m_GameObject: {fileID: 248375977}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0}
+  m_LocalScale: {x: 0.8333333, y: 0.8333333, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1787447703}
-  m_RootOrder: 7
+  m_Father: {fileID: 152405252}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 220.50002, y: 396.90002}
+  m_AnchoredPosition: {x: 367.5, y: 661.5}
   m_SizeDelta: {x: 138, y: 138}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &248375979
@@ -2474,7 +2586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0.039215688}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2680,7 +2792,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 277623725}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 277623727}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &277623725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2694,14 +2818,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0e15721bf59541c45af62f2ab2842b07, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2731,6 +2855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -3025,15 +3150,15 @@ RectTransform:
   m_GameObject: {fileID: 355894934}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0}
+  m_LocalScale: {x: 0.8333333, y: 0.8333333, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1787447703}
-  m_RootOrder: 6
+  m_Father: {fileID: 152405252}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 132.3, y: 396.90002}
+  m_AnchoredPosition: {x: 220.5, y: 661.5}
   m_SizeDelta: {x: 138, y: 138}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &355894936
@@ -3049,7 +3174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0.039215688}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3255,7 +3380,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 397754528}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 397754530}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &397754528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3269,14 +3406,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7b7ec247b1ff2f34f9a3f7c1ff3a85e3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3306,6 +3443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -3413,7 +3551,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 434828662}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 434828664}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &434828662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3427,14 +3577,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0e15721bf59541c45af62f2ab2842b07, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3464,6 +3614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -3571,7 +3722,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 441476418}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 441476420}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &441476418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3585,14 +3748,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0f7b1c8a4660d4f4c9d9b2cfcae135f1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3622,6 +3785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -3826,7 +3990,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 446029921}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 446029923}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &446029921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3840,14 +4016,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6be724da7c6479e449f7d64107165dff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3877,6 +4053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -3984,7 +4161,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 462733059}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 462733061}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &462733059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3998,14 +4187,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9d634565807efb546ad018c37a30230c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4035,6 +4224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -4142,7 +4332,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 486061120}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 486061122}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &486061120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4156,14 +4358,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7b7ec247b1ff2f34f9a3f7c1ff3a85e3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4193,6 +4395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -4397,7 +4600,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 508044910}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 508044912}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &508044910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4411,14 +4626,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7b7ec247b1ff2f34f9a3f7c1ff3a85e3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4448,6 +4663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -4736,7 +4952,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 529169868}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 529169870}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &529169868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4750,14 +4978,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9c592d65188fb4e45ac09169dee6ec6e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4787,6 +5015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -4991,7 +5220,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 550289561}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 550289563}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &550289561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5005,14 +5246,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0f7b1c8a4660d4f4c9d9b2cfcae135f1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5042,6 +5283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -5149,7 +5391,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 553871441}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 553871443}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &553871441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5163,14 +5417,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9d634565807efb546ad018c37a30230c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5200,6 +5454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -5307,7 +5562,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 566900560}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 566900562}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &566900560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5321,14 +5588,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6be724da7c6479e449f7d64107165dff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5358,6 +5625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -5670,8 +5938,8 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 1, g: 0.6313726, b: 0.6784314, a: 1}
-    m_SelectedColor: {r: 0.39215687, g: 0.9098039, b: 1, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 1, g: 0.67058825, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -5690,7 +5958,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 622145619}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 622145621}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &622145619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5704,14 +5984,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9d634565807efb546ad018c37a30230c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5741,6 +6021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -5791,15 +6072,15 @@ RectTransform:
   m_GameObject: {fileID: 622306180}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0}
+  m_LocalScale: {x: 0.8333333, y: 0.8333333, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1787447703}
-  m_RootOrder: 8
+  m_Father: {fileID: 152405252}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 308.7, y: 396.90002}
+  m_AnchoredPosition: {x: 514.5, y: 661.5}
   m_SizeDelta: {x: 138, y: 138}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &622306182
@@ -5815,7 +6096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0.039215688}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6021,7 +6302,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 641086962}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 641086964}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &641086962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6035,14 +6328,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9d634565807efb546ad018c37a30230c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6072,6 +6365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -6276,7 +6570,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 659348965}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 659348967}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &659348965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6290,7 +6596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6327,6 +6633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -6434,7 +6741,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 684227240}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 684227242}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &684227240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6448,14 +6767,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0f7b1c8a4660d4f4c9d9b2cfcae135f1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6485,6 +6804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -6592,7 +6912,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 692283125}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 692283127}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &692283125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6606,7 +6938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6643,6 +6975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -6830,7 +7163,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 701642817}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 701642819}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &701642817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6844,14 +7189,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0f7b1c8a4660d4f4c9d9b2cfcae135f1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6881,6 +7226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -7019,7 +7365,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 713669720}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 713669722}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &713669720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7033,7 +7391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7070,6 +7428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -7120,15 +7479,15 @@ RectTransform:
   m_GameObject: {fileID: 726048407}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0}
+  m_LocalScale: {x: 0.8333333, y: 0.8333333, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1787447703}
-  m_RootOrder: 1
+  m_Father: {fileID: 152405252}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -308.7, y: 396.90002}
+  m_AnchoredPosition: {x: -514.5, y: 661.5}
   m_SizeDelta: {x: 138, y: 138}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &726048409
@@ -7144,7 +7503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0.039215688}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7293,15 +7652,15 @@ RectTransform:
   m_GameObject: {fileID: 741655585}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0}
+  m_LocalScale: {x: 0.8333333, y: 0.8333333, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1787447703}
-  m_RootOrder: 3
+  m_Father: {fileID: 152405252}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -132.3, y: 396.90002}
+  m_AnchoredPosition: {x: -220.5, y: 661.5}
   m_SizeDelta: {x: 138, y: 138}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &741655587
@@ -7317,7 +7676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0.039215688}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7582,7 +7941,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 778582214}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 778582216}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &778582214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7596,14 +7967,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7b7ec247b1ff2f34f9a3f7c1ff3a85e3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7633,6 +8004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -8031,7 +8403,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 830005496}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 830005498}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &830005496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8045,14 +8429,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9c592d65188fb4e45ac09169dee6ec6e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8082,6 +8466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -8236,7 +8621,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 843128915}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 843128917}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &843128915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8250,14 +8647,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1294c8b24507f8c4b990563e4da2fc7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8287,6 +8684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -8491,7 +8889,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 883333846}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 883333848}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &883333846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8505,14 +8915,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0e15721bf59541c45af62f2ab2842b07, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8542,6 +8952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -8649,7 +9060,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 884888248}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 884888250}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &884888248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8663,14 +9086,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0f7b1c8a4660d4f4c9d9b2cfcae135f1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8700,6 +9123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -8757,6 +9181,7 @@ MonoBehaviour:
   b_Reset: 0
   i_SizeH: 8
   i_SizeW: 8
+  i_SizeTotal: 0
   iIndexSelected: -1
   iNumValue: 9
   gameobject_Gem:
@@ -8889,7 +9314,18 @@ MonoBehaviour:
   - {fileID: 586539232}
   - {fileID: 1097823387}
   - {fileID: 1260443128}
+  GemPrefabs:
+  - {fileID: 2812812695527869247, guid: b53be5c9bf8f27f46b886db139a56ff1, type: 3}
+  - {fileID: 5546416453557832737, guid: 0a20c3aa51101444dbb688b75f38c0ff, type: 3}
+  - {fileID: 2683031921195283215, guid: a0f9c65f964be134d88da47ab73e11bf, type: 3}
+  - {fileID: 2609351232377027515, guid: c1e67d9667368704aa1bafaa8e9f0cee, type: 3}
+  - {fileID: 5005961117048546386, guid: ad99f9b75de297741ad7c9f69eacddf8, type: 3}
+  - {fileID: 7035182596476428287, guid: df17d531cd4539e49ab2e4669fda5802, type: 3}
+  - {fileID: 3464203298591005064, guid: 1b1f407cd2e680743934936b37f44c0c, type: 3}
+  - {fileID: 4180604218658546027, guid: 21945416df95e5b44ba0b355b7bdc562, type: 3}
+  - {fileID: 501405393527499422, guid: 149adf36953807048b8a7ec736137197, type: 3}
   b_GemSelected: 0
+  b_GemSelecting: 0
 --- !u!4 &897692439
 Transform:
   m_ObjectHideFlags: 0
@@ -8989,7 +9425,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 903016379}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 903016381}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &903016379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9003,14 +9451,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1294c8b24507f8c4b990563e4da2fc7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9040,6 +9488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -9193,7 +9642,7 @@ RectTransform:
   m_Children:
   - {fileID: 701362880}
   m_Father: {fileID: 1787447703}
-  m_RootOrder: 15
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -9366,7 +9815,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 922877868}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 922877870}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &922877868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9380,14 +9841,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6be724da7c6479e449f7d64107165dff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9417,6 +9878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -9524,7 +9986,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 928525184}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 928525186}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &928525184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9538,14 +10012,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6be724da7c6479e449f7d64107165dff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9575,6 +10049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -9682,7 +10157,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 953902044}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 953902046}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &953902044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9696,14 +10183,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7b7ec247b1ff2f34f9a3f7c1ff3a85e3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9733,6 +10220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -9789,7 +10277,7 @@ RectTransform:
   m_Children:
   - {fileID: 1388834998}
   m_Father: {fileID: 1787447703}
-  m_RootOrder: 14
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -9909,7 +10397,7 @@ RectTransform:
   - {fileID: 1549560245}
   - {fileID: 1694328614}
   m_Father: {fileID: 1787447703}
-  m_RootOrder: 18
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10097,7 +10585,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 989105953}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 989105955}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &989105953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10111,14 +10611,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9d634565807efb546ad018c37a30230c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10148,6 +10648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -10362,7 +10863,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1092094819}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1092094821}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1092094819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10376,14 +10889,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0e15721bf59541c45af62f2ab2842b07, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10413,6 +10926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -10811,7 +11325,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1114397961}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1114397963}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1114397961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10825,7 +11351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10862,6 +11388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -11163,7 +11690,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1161902241}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1161902243}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1161902241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11177,14 +11716,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1294c8b24507f8c4b990563e4da2fc7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11214,6 +11753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -11321,7 +11861,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1180340035}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1180340037}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1180340035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11335,14 +11887,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0e15721bf59541c45af62f2ab2842b07, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11372,6 +11924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -11682,7 +12235,7 @@ RectTransform:
   - {fileID: 141188978}
   - {fileID: 1092094817}
   m_Father: {fileID: 1787447703}
-  m_RootOrder: 11
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11719,7 +12272,7 @@ RectTransform:
   m_Children:
   - {fileID: 1023005047}
   m_Father: {fileID: 1787447703}
-  m_RootOrder: 19
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12586,7 +13139,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1262574904}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1262574906}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1262574904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12600,14 +13165,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7b7ec247b1ff2f34f9a3f7c1ff3a85e3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12637,6 +13202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -12784,15 +13350,15 @@ RectTransform:
   m_GameObject: {fileID: 1305343891}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0}
+  m_LocalScale: {x: 0.8333333, y: 0.8333333, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1787447703}
-  m_RootOrder: 4
+  m_Father: {fileID: 152405252}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -44.100002, y: 396.90002}
+  m_AnchoredPosition: {x: -73.5, y: 661.5}
   m_SizeDelta: {x: 138, y: 138}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1305343893
@@ -12808,7 +13374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0.039215688}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -13147,7 +13713,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1380967575}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1380967577}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1380967575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13161,14 +13739,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6be724da7c6479e449f7d64107165dff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13198,6 +13776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -13332,7 +13911,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1787447703}
-  m_RootOrder: 9
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13407,7 +13986,7 @@ RectTransform:
   m_Children:
   - {fileID: 777806121}
   m_Father: {fileID: 1787447703}
-  m_RootOrder: 13
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13538,15 +14117,15 @@ RectTransform:
   m_GameObject: {fileID: 1440642351}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0}
+  m_LocalScale: {x: 0.8333333, y: 0.8333333, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1787447703}
-  m_RootOrder: 5
+  m_Father: {fileID: 152405252}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 44.100002, y: 396.90002}
+  m_AnchoredPosition: {x: 73.5, y: 661.5}
   m_SizeDelta: {x: 138, y: 138}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1440642353
@@ -13562,7 +14141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0.039215688}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -13717,7 +14296,7 @@ RectTransform:
   m_Children:
   - {fileID: 1510461483}
   m_Father: {fileID: 1787447703}
-  m_RootOrder: 16
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -14096,7 +14675,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1500769173}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1500769175}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1500769173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14110,14 +14701,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9c592d65188fb4e45ac09169dee6ec6e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14147,6 +14738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -14334,7 +14926,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1539143353}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1539143355}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1539143353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14348,14 +14952,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6be724da7c6479e449f7d64107165dff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14385,6 +14989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -14830,7 +15435,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1597351735}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1597351737}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1597351735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14844,14 +15461,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7b7ec247b1ff2f34f9a3f7c1ff3a85e3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14881,6 +15498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -14988,7 +15606,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1606802950}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1606802952}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1606802950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15002,14 +15632,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9c592d65188fb4e45ac09169dee6ec6e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15039,6 +15669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -15155,7 +15786,7 @@ RectTransform:
   - {fileID: 1097823388}
   - {fileID: 1260443129}
   m_Father: {fileID: 1787447703}
-  m_RootOrder: 10
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15800,7 +16431,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1713736937}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1713736939}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1713736937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15814,14 +16457,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6be724da7c6479e449f7d64107165dff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15851,6 +16494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -15958,7 +16602,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1725243557}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1725243559}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1725243557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15972,14 +16628,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9c592d65188fb4e45ac09169dee6ec6e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16009,6 +16665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -16254,7 +16911,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1782494788}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1782494790}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1782494788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16268,14 +16937,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1294c8b24507f8c4b990563e4da2fc7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16305,6 +16974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -16412,7 +17082,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1783646058}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1783646060}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1783646058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16426,14 +17108,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0e15721bf59541c45af62f2ab2842b07, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16463,6 +17145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -16676,14 +17359,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 152405252}
-  - {fileID: 726048408}
-  - {fileID: 228062472}
-  - {fileID: 741655586}
-  - {fileID: 1305343892}
-  - {fileID: 1440642352}
-  - {fileID: 355894935}
-  - {fileID: 248375978}
-  - {fileID: 622306181}
   - {fileID: 1407347015}
   - {fileID: 1623117712}
   - {fileID: 1197347886}
@@ -16884,7 +17559,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1838897562}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1838897564}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1838897562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16898,14 +17585,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1294c8b24507f8c4b990563e4da2fc7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16935,6 +17622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -17042,7 +17730,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1839681164}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1839681166}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1839681164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17056,14 +17756,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9d634565807efb546ad018c37a30230c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17093,6 +17793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -17443,7 +18144,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1923832575}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1923832577}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1923832575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17457,14 +18170,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9d634565807efb546ad018c37a30230c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17494,6 +18207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -17601,7 +18315,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1938405192}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1938405194}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1938405192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17615,14 +18341,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6be724da7c6479e449f7d64107165dff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17652,6 +18378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -17759,7 +18486,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1941905539}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1941905541}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1941905539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17773,14 +18512,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9c592d65188fb4e45ac09169dee6ec6e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17810,6 +18549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -17917,7 +18657,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1945637064}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945637066}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1945637064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17931,14 +18683,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0f7b1c8a4660d4f4c9d9b2cfcae135f1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17968,6 +18720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -18075,7 +18828,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1951368770}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1951368772}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1951368770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18089,14 +18854,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9c592d65188fb4e45ac09169dee6ec6e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18126,6 +18891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -18233,7 +18999,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1954263997}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1954263999}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1954263997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18247,14 +19025,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9c592d65188fb4e45ac09169dee6ec6e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18284,6 +19062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -18422,7 +19201,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1976860146}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1976860148}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1976860146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18436,7 +19227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -18473,6 +19264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -18580,7 +19372,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1977362960}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1977362962}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1977362960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18594,14 +19398,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9d634565807efb546ad018c37a30230c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18631,6 +19435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -18738,7 +19543,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1991245242}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1991245244}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1991245242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18752,7 +19569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -18789,6 +19606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -19284,7 +20102,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2125902652}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2125902654}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2125902652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19298,14 +20128,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0e15721bf59541c45af62f2ab2842b07, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19335,6 +20165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -19539,7 +20370,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2138559240}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2138559242}
+        m_TargetAssemblyTypeName: GemIndex, Assembly-CSharp
+        m_MethodName: OnSelectClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2138559240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19553,14 +20396,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7b7ec247b1ff2f34f9a3f7c1ff3a85e3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec61353d46a42f2428b0693482c0b384, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19590,6 +20433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8fedc38672f21459436561975bad91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerState: {fileID: 897692438}
   i_GemIndex: -1
   i_GemValue: -1
   i_index: -1
@@ -19642,7 +20486,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1787447703}
-  m_RootOrder: 12
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
