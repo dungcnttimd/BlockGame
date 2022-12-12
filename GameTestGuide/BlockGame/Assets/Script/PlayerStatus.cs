@@ -16,6 +16,7 @@ public class PlayerStatus : MonoBehaviour
     public int i_SizeTotal = 0;
 
     public int iIndexSelected = -1;
+    public int iIndexSelectting = -1;
     public int iNumValue = 9;
     public List<GameObject> gameobject_Gem;
     public List<GameObject> gameobject_BackgroundGem;
@@ -121,11 +122,17 @@ public class PlayerStatus : MonoBehaviour
         for(int x = 0; x < i_SizeTotal; x += 1){
             if(x % i_SizeW !=  i_SizeW - 1 && x % i_SizeW != i_SizeW - 2){
                 if(gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue == gameobject_Gem[x+1].GetComponent<GemIndex>().i_GemValue && gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue == gameobject_Gem[x+2].GetComponent<GemIndex>().i_GemValue){
+                    // Debug.Log(gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue);
+                    // Debug.Log(gameobject_Gem[x+1].GetComponent<GemIndex>().i_GemValue);
+                    // Debug.Log(gameobject_Gem[x+2].GetComponent<GemIndex>().i_GemValue);
                     arrayadd(resolve, x, 1);        //Horizontal    - ngang
                 }
             }
             if(x <= i_SizeTotal - i_SizeW - i_SizeW){
                 if(gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue == gameobject_Gem[x+i_SizeW].GetComponent<GemIndex>().i_GemValue && gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue == gameobject_Gem[x+i_SizeW+i_SizeW].GetComponent<GemIndex>().i_GemValue){
+                    // Debug.Log(gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue);
+                    // Debug.Log(gameobject_Gem[x+i_SizeW].GetComponent<GemIndex>().i_GemValue);
+                    // Debug.Log(gameobject_Gem[x+2*i_SizeW].GetComponent<GemIndex>().i_GemValue);
                     arrayadd(resolve, x, 2);        //Veritical     - dọc
                 }
             }
@@ -157,40 +164,123 @@ public class PlayerStatus : MonoBehaviour
                 indexforbom -= i_SizeW;
             }
     }
-    private void process(){
+    private void processState_1(){
         foreach(Animator gameObject in gemZoom){
             gameObject.SetBool("Selected", false);
         }
         foreach(Animator gameObject in gemBackgourndGradient){
             gameObject.SetBool("Active", false);
         }
-        
         int x = iIndexSelected % i_SizeW + 1;
         int y = iIndexSelected / i_SizeH + 1;
-        if(b_GemSelected == true && b_GemSelecting == false){
-            gemZoom[iIndexSelected].SetBool("Selected", true);
-            if(y == 1){
-                gemBackgourndGradient[iIndexSelected+i_SizeW].SetBool("Active", true);
-            }
-            if(y == i_SizeH){
-                gemBackgourndGradient[iIndexSelected-i_SizeW].SetBool("Active", true);
-            }
-            if(y != 1 && y != i_SizeH){
-                gemBackgourndGradient[iIndexSelected+i_SizeW].SetBool("Active", true);
-                gemBackgourndGradient[iIndexSelected-i_SizeW].SetBool("Active", true);
-            }
-            if(x == 1){
-                gemBackgourndGradient[iIndexSelected+1].SetBool("Active", true);
-            }
-            if(x == i_SizeW){
-                gemBackgourndGradient[iIndexSelected-1].SetBool("Active", true);
-            }
-            if(x != 1 && x != i_SizeW){
-                gemBackgourndGradient[iIndexSelected+1].SetBool("Active", true);
-                gemBackgourndGradient[iIndexSelected-1].SetBool("Active", true);
+
+        gemZoom[iIndexSelected].SetBool("Selected", true);
+        if(y == 1){
+            gemBackgourndGradient[iIndexSelected+i_SizeW].SetBool("Active", true);
+        }
+        if(y == i_SizeH){
+            gemBackgourndGradient[iIndexSelected-i_SizeW].SetBool("Active", true);
+        }
+        if(y != 1 && y != i_SizeH){
+            gemBackgourndGradient[iIndexSelected+i_SizeW].SetBool("Active", true);
+            gemBackgourndGradient[iIndexSelected-i_SizeW].SetBool("Active", true);
+        }
+        if(x == 1){
+            gemBackgourndGradient[iIndexSelected+1].SetBool("Active", true);
+        }
+        if(x == i_SizeW){
+            gemBackgourndGradient[iIndexSelected-1].SetBool("Active", true);
+        }
+        if(x != 1 && x != i_SizeW){
+            gemBackgourndGradient[iIndexSelected+1].SetBool("Active", true);
+            gemBackgourndGradient[iIndexSelected-1].SetBool("Active", true);
+        }
+    }
+    void SwapValue(int i_aValue, int i_bValue){
+        i_aValue += i_bValue;
+        i_bValue = i_aValue - i_bValue;
+        i_aValue -= i_bValue;
+    }
+    private void processState_2(){
+        //iIndexSelected
+        //iIndexSelectting
+        foreach(Animator gameObject in gemZoom){
+            gameObject.SetBool("Selected", false);
+        }
+        foreach(Animator gameObject in gemBackgourndGradient){
+            gameObject.SetBool("Active", false);
+        }
+        int x = iIndexSelectting % i_SizeW + 1;
+        int y = iIndexSelectting / i_SizeH + 1;
+        bool flag = false;
+        if(x > 0 && x < i_SizeW && flag == false){
+            if(iIndexSelected == iIndexSelectting + 1 || iIndexSelected == iIndexSelectting - 1){
+                // SwapValue(gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue, gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue);
+                gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue += gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+                gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue = gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue - gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+                gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue -= gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+                flag = true;
             }
         }
-        gameobject_Gem[iIndexSelected].SetActive(false);
+        if(x == 0 && flag == false){
+            if(iIndexSelected == iIndexSelectting + 1){
+                gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue += gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+                gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue = gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue - gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+                gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue -= gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+                flag = true;
+            }
+        }
+        if(x == i_SizeW && flag == false){
+            if(iIndexSelected == iIndexSelectting - 1){
+                gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue += gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+                gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue = gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue - gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+                gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue -= gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+                flag = true;
+            }
+        }
+        if(y > 0 && y < i_SizeH && flag == false){
+            if(iIndexSelected == iIndexSelectting + i_SizeW || iIndexSelected == iIndexSelectting - i_SizeW){
+                gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue += gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+                gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue = gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue - gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+                gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue -= gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+                flag = true;
+            }
+        }
+        if(y == 0 && flag == false){
+            if(iIndexSelected == iIndexSelectting + i_SizeW){
+                gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue += gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+                gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue = gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue - gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+                gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue -= gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+                flag = true;
+            }
+        }
+        if(y == i_SizeH && flag == false){
+            if(iIndexSelected == iIndexSelectting - i_SizeW){
+                gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue += gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+                gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue = gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue - gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+                gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue -= gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+                flag = true;
+            }
+        }
+        if(flag == true){
+            List<int> a = CheckGemInit(); 
+            if(a.Count < 1){
+                gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue += gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+                gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue = gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue - gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+                gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue -= gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+            }else{
+                gameobject_Gem[iIndexSelected].GetComponent<Image>().color = new Color32(255,255,255,255);
+                string pathResources = "Art/PicSelected/".ToString();
+                pathResources += gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue.ToString();
+                gameobject_Gem[iIndexSelected].GetComponent<Image>().sprite = Resources.Load<Sprite>(pathResources);
+
+                gameobject_Gem[iIndexSelectting].GetComponent<Image>().color = new Color32(255,255,255,255);
+                string pathResourcess = "Art/PicSelected/".ToString();
+                pathResourcess += gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue.ToString();
+                gameobject_Gem[iIndexSelectting].GetComponent<Image>().sprite = Resources.Load<Sprite>(pathResourcess);
+            }            
+        }
+        iIndexSelectting = -1;
     }
     // Update is called once per frame
     
@@ -220,10 +310,19 @@ public class PlayerStatus : MonoBehaviour
                 }
             }
             iIndexSelected = val;
-            b_GemSelecting = false;
-            process();
+
+            if(b_GemSelecting == false){
+                processState_1();
+                iIndexSelectting = iIndexSelected;
+                b_GemSelecting = true;
+            }else{
+                processState_2();
+                b_GemSelecting = false;
+            }
+
             b_GemSelected = false;
         }
+
         // if((int)Time.time % 5 == 0){                                                                //done get selected index   
         //     for(int i = 0; i < i_SizeTotal; i += 1){                                                //gameobject_Gem[i].GetComponent<GemIndex>().i_index
         //         Debug.Log(gameobject_Gem[i].GetComponent<GemIndex>().i_index);      //b_GemSelected == true 
