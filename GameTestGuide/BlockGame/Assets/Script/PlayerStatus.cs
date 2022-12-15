@@ -17,11 +17,12 @@ public class PlayerStatus : MonoBehaviour
 
     public int iIndexSelected = -1;
     public int iIndexSelectting = -1;
-    public int iNumValue = 9;
+    // public int iNumValue = 9;
     public List<GameObject> gameobject_Gem;
     public List<GameObject> gameobject_BackgroundGem;
+    public GameObject RocketBom;
     [SerializeField] private List<GameObject> GemPrefabs;
-    private int i_NumOfGemPrefabs = 0;
+    public int i_NumOfGemPrefabs = 0;
 
     public bool b_GemSelected = false;
     public bool b_GemSelecting = false;
@@ -44,6 +45,7 @@ public class PlayerStatus : MonoBehaviour
     
 */
     void Awake(){
+        RocketBom.SetActive(false);
         b_GemSelected = false;
         i_SizeTotal = i_SizeH * i_SizeW;
         for(int i = 0; i < i_SizeTotal; i += 1){
@@ -79,9 +81,24 @@ public class PlayerStatus : MonoBehaviour
             initAnimationReturn();
         }
     }
+    void initAnimationRocket(float currenttime, GameObject rocket){                              //funciton active when u set <currenttime> and u mustn't set <currenttime> again
+        if(Time.time - currenttime > 3f){
+            return;
+        }
+        
+        Animator rk = rocket.GetComponent<Animator>();
+        if(Time.time - currenttime < 1.2f){
+            rocket.SetActive(true);
+            rk.SetBool("isRocket", true);
+        }
+        if(Time.time - currenttime >= 1.2f){
+             rk.SetBool("isRocket", false);
+             rocket.SetActive(false);
+        }
+    }
     int randomValue(){
-        int val = (int)Random.Range(minInclusive: 1f, 10f);
-        if(val == 10){
+        int val = (int)Random.Range(minInclusive: 1f, 7f);
+        if(val == 8){
             val -= 1;
         }
         return val;
@@ -117,19 +134,47 @@ public class PlayerStatus : MonoBehaviour
         lis.Add(val);
         lis.Add(dir);
     }
-    List<int> CheckGemInit(){
+    List<int> CheckGemInit3(){
         List<int> resolve = new List<int>();
         for(int x = 0; x < i_SizeTotal; x += 1){
-            if(x % i_SizeW !=  i_SizeW - 1 && x % i_SizeW != i_SizeW - 2){
-                if(gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue == gameobject_Gem[x+1].GetComponent<GemIndex>().i_GemValue && gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue == gameobject_Gem[x+2].GetComponent<GemIndex>().i_GemValue){
+            if(x % i_SizeW !=  i_SizeW - 1 && 
+                x % i_SizeW != i_SizeW - 2){
+                    if(gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue == gameobject_Gem[x+1].GetComponent<GemIndex>().i_GemValue && 
+                        gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue == gameobject_Gem[x+2].GetComponent<GemIndex>().i_GemValue){
+                        // Debug.Log(gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue);
+                        // Debug.Log(gameobject_Gem[x+1].GetComponent<GemIndex>().i_GemValue);
+                        // Debug.Log(gameobject_Gem[x+2].GetComponent<GemIndex>().i_GemValue);
+                        arrayadd(resolve, x, 1);        //Horizontal    - ngang
+                    }
+            }
+            if(x < i_SizeTotal - 2*i_SizeW){
+                if(gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue == gameobject_Gem[x+i_SizeW].GetComponent<GemIndex>().i_GemValue && 
+                    gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue == gameobject_Gem[x+i_SizeW+i_SizeW].GetComponent<GemIndex>().i_GemValue){
                     // Debug.Log(gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue);
-                    // Debug.Log(gameobject_Gem[x+1].GetComponent<GemIndex>().i_GemValue);
-                    // Debug.Log(gameobject_Gem[x+2].GetComponent<GemIndex>().i_GemValue);
-                    arrayadd(resolve, x, 1);        //Horizontal    - ngang
+                    // Debug.Log(gameobject_Gem[x+i_SizeW].GetComponent<GemIndex>().i_GemValue);
+                    // Debug.Log(gameobject_Gem[x+2*i_SizeW].GetComponent<GemIndex>().i_GemValue);
+                    arrayadd(resolve, x, 2);        //Veritical     - dọc
                 }
             }
-            if(x <= i_SizeTotal - i_SizeW - i_SizeW){
-                if(gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue == gameobject_Gem[x+i_SizeW].GetComponent<GemIndex>().i_GemValue && gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue == gameobject_Gem[x+i_SizeW+i_SizeW].GetComponent<GemIndex>().i_GemValue){
+        }
+        return resolve;
+    }
+    List<int> CheckGemInit4(){
+        List<int> resolve = new List<int>();
+        for(int x = 0; x < i_SizeTotal; x += 1){
+            if(x % i_SizeW !=  i_SizeW - 1 && 
+                x % i_SizeW != i_SizeW - 2 && 
+                x % i_SizeW != i_SizeW - 3){
+                    if(gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue == gameobject_Gem[x+1].GetComponent<GemIndex>().i_GemValue && 
+                        gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue == gameobject_Gem[x+2].GetComponent<GemIndex>().i_GemValue && 
+                        gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue == gameobject_Gem[x+3].GetComponent<GemIndex>().i_GemValue){
+                        arrayadd(resolve, x, 1);        //Horizontal    - ngang
+                    }
+            }
+            if(x <= i_SizeTotal - 3*i_SizeW){
+                if(gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue == gameobject_Gem[x+i_SizeW].GetComponent<GemIndex>().i_GemValue && 
+                    gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue == gameobject_Gem[x+2*i_SizeW].GetComponent<GemIndex>().i_GemValue &&
+                    gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue == gameobject_Gem[x+3*i_SizeW].GetComponent<GemIndex>().i_GemValue){
                     // Debug.Log(gameobject_Gem[x].GetComponent<GemIndex>().i_GemValue);
                     // Debug.Log(gameobject_Gem[x+i_SizeW].GetComponent<GemIndex>().i_GemValue);
                     // Debug.Log(gameobject_Gem[x+2*i_SizeW].GetComponent<GemIndex>().i_GemValue);
@@ -145,7 +190,6 @@ public class PlayerStatus : MonoBehaviour
                 gameobject_Gem[indexforbom].GetComponent<Image>().color = new Color32(255,255,255,255);
                 string pathResources = "Art/PicSelected/".ToString();
                 if(indexforbom <= i_SizeW){
-                    Debug.Log("-Random value-");
                     int val = (int)Random.Range(minInclusive: 1f, 10f);
                     if(val == 10){
                         val -= 1;
@@ -263,7 +307,8 @@ public class PlayerStatus : MonoBehaviour
             }
         }
         if(flag == true){
-            List<int> a = CheckGemInit(); 
+            List<int> a = CheckGemInit3();
+            // List<int> b = CheckGemInit4();
             if(a.Count < 1){
                 gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue += gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
                 gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue = gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue - gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
@@ -278,15 +323,51 @@ public class PlayerStatus : MonoBehaviour
                 string pathResourcess = "Art/PicSelected/".ToString();
                 pathResourcess += gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue.ToString();
                 gameobject_Gem[iIndexSelectting].GetComponent<Image>().sprite = Resources.Load<Sprite>(pathResourcess);
-            }            
+            }
+            // if(b.Count < 1){
+            //     gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue += gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+            //     gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue = gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue - gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+            //     gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue -= gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue;
+            // }else{
+            //     gameobject_Gem[iIndexSelected].GetComponent<Image>().color = new Color32(255,255,255,255);
+            //     string pathResources = "Art/PicSelected/".ToString();
+            //     pathResources += gameobject_Gem[iIndexSelected].GetComponent<GemIndex>().i_GemValue.ToString();
+            //     gameobject_Gem[iIndexSelected].GetComponent<Image>().sprite = Resources.Load<Sprite>(pathResources);
+
+            //     gameobject_Gem[iIndexSelectting].GetComponent<Image>().color = new Color32(255,255,255,255);
+            //     string pathResourcess = "Art/PicSelected/".ToString();
+            //     pathResourcess += gameobject_Gem[iIndexSelectting].GetComponent<GemIndex>().i_GemValue.ToString();
+            //     gameobject_Gem[iIndexSelectting].GetComponent<Image>().sprite = Resources.Load<Sprite>(pathResourcess);
+            // }            
         }
         iIndexSelectting = -1;
     }
     // Update is called once per frame
-    
+    float thistimer = -10f;
     void Update(){
         initAnimation(thistime);
-        List<int> a = CheckGemInit(); 
+        List<int> b = CheckGemInit4(); 
+        for(int i = 0; i < b.Count; i += 2){
+            // Animator Rocket = RocketBom.GetComponent<Animator>();
+            if(i == 0){
+                thistimer = Time.time;
+                Debug.Log(thistimer);
+            }
+            // Debug.Log(b[i] + " - " + b[i+1]);
+            if(b[i+1] == 1){
+                for(int j = 0; j < 4; j += 1){
+                    afterBOOM(b[i]+j);
+                }
+            }else{
+                for(int j = 0; j < 4; j += 1){
+                    afterBOOM(b[i]+j*i_SizeW);
+                }
+            }
+            b.Clear();
+        }
+        initAnimationRocket(thistimer, RocketBom);
+
+        List<int> a = CheckGemInit3(); 
         for(int i = 0; i < a.Count; i+= 2){
             Debug.Log(a[i] + " - " + a[i+1]);
             if(a[i+1] == 1){

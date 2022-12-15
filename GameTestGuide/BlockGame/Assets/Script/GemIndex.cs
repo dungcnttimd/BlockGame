@@ -12,8 +12,8 @@ public class GemIndex : MonoBehaviour
     public int i_index = -1;
 
     void Awake(){
-        int val = (int)Random.Range(minInclusive: 1f, 10f);
-        if(val == 10){
+        int val = (int)Random.Range(minInclusive: 1f, 7f);
+        if(val == 8){
             val -= 1;
         }
         i_GemValue = val;
